@@ -75,7 +75,7 @@ region.Code_dep_code_commune
 region.Code_dep_code_commune   
 **WHERE** aca_nom = 'Paris'; 
 
-![Résultat](C:\Users\Administrateur\Documents\Data analyst\GitHub_Projet\Sqlite_sql\SQL\Image requete_9.png)
+<img src ="C:\Users\Administrateur\Documents\Data analyst\GitHub_Projet\Sqlite_sql\SQL\Image requete_9.png" >
 
 ### Requête 10 :Classement des 10 départements où le prix moyen de la cotisation est le plus élevé ?
 **SELECT** dep_nom **AS** Départements ,AVG(prix_cotisation_mensuel) **AS** 
@@ -86,7 +86,7 @@ contrat.Code_dep_code_commune
 **GROUP BY** Départements   
 **ORDER BY** prix_moyen_de_la_cotisation **desc limit** 10; 
 
-![Résultat](1C:\Users\Administrateur\Documents\Data analyst\GitHub_Projet\Sqlite_sql\SQL\Image requete_10.png)
+<img src ="C:\Users\Administrateur\Documents\Data analyst\GitHub_Projet\Sqlite_sql\SQL\Image requete_10.png" >
 
 ### Requête 11 :Liste des communes ayant eu au moins 150 contrats ?  
 **SELECT** com_nom_maj_court,**COUNT** (contrat_ID) **AS** nombre_contrat   
@@ -96,7 +96,7 @@ region.Code_dep_code_commune
 **GROUP BY** com_nom_maj_court   
 **HAVING COUNT** (contrat_ID) >=150; 
 
-![Résultat](C:\Users\Administrateur\Documents\Data analyst\GitHub_Projet\Sqlite_sql\SQL\Image requete_11.png)
+<img src ="C:\Users\Administrateur\Documents\Data analyst\GitHub_Projet\Sqlite_sql\SQL\Image requete_11.png" >
 
 ### Requête 12 :Quel est le nombre de contrats pour chaque région ?  
 **SELECT DISTINCT** reg_nom ,**COUNT** (contrat_ID) **as** nombre_contrat   
@@ -104,5 +104,6 @@ region.Code_dep_code_commune
 **LEFT JOIN** contrat **ON** (contrat.Code_dep_code_commune = 
 region.Code_dep_code_commune)   
 **ORDER BY**reg_nom; 
- 
-![Résultat](C:\Users\Administrateur\Documents\Data analyst\GitHub_Projet\Sqlite_sql\SQL\Image requete_12.png)
+
+<img src ="C:\Users\Administrateur\Documents\Data analyst\GitHub_Projet\Sqlite_sql\SQL\Image requete_12.png" > 
+
